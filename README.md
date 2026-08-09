@@ -1,5 +1,6 @@
-# ❄️ Cleaners vs Snow
 
+# ❄️ Cleaners vs Snow
+![Gameplay Screenshot](gameplay.png)
 An engaging, text-based terminal strategy and clicker game written in Python. Players face an economic and environmental dilemma: take control of a commercial **Snow Cleaning Company** to systematically clear winter hazards, or control the **Snow Weather** itself to blanket the grid and disrupt operations.
 
 ## ✨ Core Features
