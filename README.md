@@ -1,47 +1,34 @@
+# Cleaners vs Snow 🌨️
 
-# ❄️ Cleaners vs Snow
-![Gameplay Screenshot](gameplay.png)
-An engaging, text-based terminal strategy and clicker game written in Python. Players face an economic and environmental dilemma: take control of a commercial **Snow Cleaning Company** to systematically clear winter hazards, or control the **Snow Weather** itself to blanket the grid and disrupt operations.
+![EXAMPLE](gameplay.png)
 
-## ✨ Core Features
-* **Dual-Faction Gameplay**: Play two completely distinct simulation loops with unique progression tracks.
-* **Incremental Economy**: Use active terminal interaction (`Enter` farming) combined with automated tool upgrades and scaling multipliers.
-* **Persistent States**: State-serialization system utilizing native JSON structures (`save.json`, `snow.json`, `company.json`) to safely load or write progress.
-* **Modular Codebase**: Clean, decoupled architectural design separating core runtime execution (`main.py`) from entities (`player.py`), rendering (`printer.py`), and storage routines (`saves.py`).
+A text-based Python strategy clicker game where you control the balance of winter.
 
-## 📁 Repository Structure
-* `main.py` — Primary application entryway initializing main menus and scheduling the global game loops.
-* `player.py` — Base object class structures managing inventory indexes, currency counters, and tool tier calculations.
-* `printer.py` — High-utility terminal rendering layout module providing formatting structures for text-art screens.
-* `saves.py` — Input/Output buffer pipeline managing file locks and deep state JSON formatting.
+## 🎮 What is it?
 
-## 🚀 Installation & Setup
+In this game, you choose your side in an endless winter battle:
+* **The Company:** Upgrade tools, hire cleaners, and keep the city streets clear.
+* **The Weather:** Control the snowstorm, boost the precipitation rate, and bury the town.
 
-### Prerequisites
-Make sure you have **Python 3.8+** installed on your operating system.
+## 🚀 Installation & Running
 
-### Deployment Steps
-1. Clone the project tree:
-   ```bash
-   git clone https://github.com
-   ```
-2. Step inside the application root environment:
-   ```bash
-   cd snow-game
-   ```
-3. Install required setup dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+The project uses [uv](https://github.com/astral-sh/uv) for fast, reliable dependency management. You don't need to manually create virtual environments or activate them.
 
-## 🎮 How to Play
-1. **Launch the Engine**: Start the terminal execution loop:
-   ```bash
-   python3 main.py
-   ```
-2. **Faction Select**: Pick your alliance (Snow Cleaning Enterprise OR Overlord Weather System).
-3. **Resource Farming**: Press `Enter` to generate operational capital (Coins or Precipitation Density).
-4. **Acquire Upgrades**: Open the in-game market window to buy automated machinery, deploy workforce boosts, or optimize passive production efficiency.
+### 1. Clone the repository
+```bash
+git clone https://github.com/lifer-x/cleaners-vs-snow
+cd cleaners-vs-snow
+```
 
----
-❄️ *Will you clean the town or bury it under the drift? The forecast is up to you.*
+### 2. Run the game
+Simply run the command below. `uv` will automatically install Python (if needed), set up a virtual environment, install `rich`, and launch the game:
+```bash
+uv run main.py
+```
+
+## 🕹️ How to Play
+
+1. **Choose a mode:** Select whether you want to play for the cleaning company or the snow weather.
+2. **Farm resources:** Press `Enter` to generate coins or accumulate snow.
+3. **Upgrade:** Buy new tools, hire workers, or boost environmental modifiers.
+4. **Win the standoff:** Automate your production and dominate the board!
